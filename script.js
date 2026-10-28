@@ -20,7 +20,7 @@ function Calculate(complete, total){
 function test1(){
     const student = new Student("Taylor", 9, 10)
     const percent = Calculate(student.completedItems, student.totalItems) * 100
-    switch(percent){
+    switch(true){
         case percent >= 90:
             console.log(`
                 Student: ${student.name}\n
@@ -56,7 +56,7 @@ function test1(){
 function test2(){
     const student = new Student("Taylor", 7, 10)
     const percent = Calculate(student.completedItems, student.totalItems) * 100
-    switch(percent){
+    switch(true){
         case percent >= 90:
             console.log(`
                 Student: ${student.name}\n
@@ -92,7 +92,7 @@ function test2(){
 function test3(){
     const student = new Student("Taylor", 4, 10)
     const percent = Calculate(student.completedItems, student.totalItems) * 100
-    switch(percent){
+    switch(true){
         case percent >= 90:
             console.log(`
                 Student: ${student.name}\n
@@ -111,7 +111,7 @@ function test3(){
                 Expected status: Making Progress
                 `)
             break
-        case percent >= 69:
+        case percent <= 69:
             console.log(`
                 Student: ${student.name}\n
                 Completed: ${student.completedItems}\n
